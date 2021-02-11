@@ -1,0 +1,13 @@
+```
+> mongorestore mongomart_item.bson
+
+> db.collection.find().count()
+
+> db.mongomart_item.find({category:"Kitchen"})
+
+> db.mongomart_item.update({"_id":22}, {title:"Bottiglia"})
+
+> db.mongomart_item.deleteOne({"_id":22})
+
+> db.mongomart_item.drop()
+```
