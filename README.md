@@ -1,6 +1,6 @@
 # MongoDB-SampleCollection
 
-Please note this repo is currently W.I.P. 
+Please note this repo is currently working in progress.
 
 
 Just some MongoDB collections and notes I am using for my course @GeeksAcademyEurope
