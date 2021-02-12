@@ -1,4 +1,4 @@
-var c = db.testcoll.initializeUnorderedBulkOp()
+var c = db.testcollx.initializeUnorderedBulkOp()
 
 for (var i=0;i<1000;i++) {
 
@@ -7,5 +7,3 @@ for (var i=0;i<1000;i++) {
 
 var ex =  c.execute();
 printjson(ex);
-
-

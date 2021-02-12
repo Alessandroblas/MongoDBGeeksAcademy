@@ -1,4 +1,4 @@
-var c = db.testcoll.initializeUnorderedBulkOp()
+var c = db.testcollxy.initializeUnorderedBulkOp()
 var N = 1000;
 
 for (var i=0;i<N;i++) {
@@ -8,5 +8,3 @@ for (var i=0;i<N;i++) {
 
 var ex =  c.execute();
 printjson(ex);
-
-
