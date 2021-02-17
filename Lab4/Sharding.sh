@@ -34,14 +34,22 @@ mongo --port 30000 --eval "use admin; db.runCommand({addshard: "localhost:10002"
 # use test 
 # db.testcoll.insert({x:1})
 
-## add index to enable shard key
-# use test 
-# db.testcoll.ensureIndex({x:1}) 
 
 ## enable test.testcoll sharding
 # use admin
 # db.runCommand({enablesharding: "test"})
+## OR
+# sh.enableSharding("test")
+
+## add index to enable shard key
+# use test 
+# db.testcoll.createIndex({x:1}) 
+
+## Shard collection
 # db.runCommand({shardcollection: "test.testcoll", key: {x: 1}})
+## OR
+# sh.shardCollection("database.collection",{x:1})
+
 # printShardingStatus()
 ## example:
 # db.runCommand( { split : "test.people", middle : { _id : 99 } } )
