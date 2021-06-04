@@ -1,6 +1,6 @@
 # MongoDB-SampleCollection
 
-Please note this repo is currently working in progress.
+Please note this repo is always working in progress.
 
 
 Just some MongoDB collections and notes I am using for my course @GeeksAcademyEurope
