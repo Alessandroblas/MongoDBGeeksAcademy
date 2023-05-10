@@ -1,0 +1,13 @@
+# Connect to a surviving member and save the current configuration
+
+cfg = rs.conf()
+
+printjson(cfg)
+
+# Modify configuration
+
+cfg.members = [cfg.members[0]]
+
+# Apply new configuration
+
+rs.reconfig(cfg, {force : true})
